@@ -5,7 +5,6 @@ const courses = document.querySelector('#courses-list'),
 
 
 // listeners
-
 loadEventListeners();
 
 function loadEventListeners() {
@@ -166,3 +165,19 @@ function getFromLocalStorage() {
     });
 }
 
+
+
+
+
+
+
+
+
+// GROUP MEMBERS:
+// robert james gaton
+// cleven gavarra
+// abel hona
+// jonna gallarosa
+
+//PS: this is our second attempt output. nadelete yung naunang git repo/domcart main na walang git commit kahit isa. 
+// kaya magtataka po kayo kung bakit magkalapit lang na minuto yung mga naicommit namin.
