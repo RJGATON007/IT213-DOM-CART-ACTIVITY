@@ -108,3 +108,26 @@ function removeCourse(e) {
     // remove from the local storage
     removeCourseLocalStorage(courseId);
 }
+// remove from local storage
+function removeCourseLocalStorage(id) {
+    // get the local storage data
+    let coursesLS = getCoursesFromStorage();
+
+    // loop through the array and find the index to remove
+    coursesLS.forEach(function(courseLS, index) {
+        if(courseLS.id === id) {
+            coursesLS.splice(index, 1);
+        }
+    });
+
+   // add the rest of the array
+   localStorage.setItem('courses', JSON.stringify(coursesLS));
+}
+// clears the shopping cart
+function clearCart() {
+    // shoppingCartContent.innerHTML = '';
+
+    while(shoppingCartContent.firstChild) {
+        shoppingCartContent.removeChild(shoppingCartContent.firstChild);  
+    }
+
